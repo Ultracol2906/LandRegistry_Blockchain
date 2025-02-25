@@ -1,0 +1,14 @@
+{
+
+    "Ganache_Url" : "http://127.0.0.1:7545",
+
+    "NETWORK_CHAIN_ID": 5777,
+
+    "Mongo_Db_Url": "localhost:27017",
+
+    "Secret_Key": "RevenueDept$123",
+
+    "Address_Used_To_Deploy_Contract": "0xCA70fA546BCe897C0c5dd9cF881E89B3b442e799",
+    
+    "Admin_Password": "12345678"
+}

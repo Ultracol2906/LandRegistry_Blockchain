@@ -1,0 +1,60 @@
+<htmL>
+
+<head>
+
+    <title>Revenue Dept</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+
+    <script src="{{ url_for('static', filename='js/contractsDetails.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/web3.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+
+    <!-- bootsrarp -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='bootstrap/jquery-3.3.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/bootstrap.min.js') }}"></script>
+
+
+</head>
+
+<body style="background-image: url('https://media4.giphy.com/media/MQTF1uW0GTZoVsseXx/giphy.gif?cid=6c09b952shmtjfxv81wqdjkg5j2mtm7ec5pwdf41oh4res4f&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');background-repeat: no-repeat;background-size: cover;">
+
+    <header>
+        <div>
+            <h1> Welcome To Revenue Department Portal</h1>
+        </div>
+    </header>
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+    <div id="connectToBlockchainDiv" style="display: block;margin-top:200px">
+        <h2 style="color:white"> Empower Your Access with Wallet Connection </h2>
+        <button onclick="connectToBlockchain()"> Connect </button>
+    </div>
+
+    <br><br>
+
+    <div id="passwordDiv" style="display: none;">
+
+        <input type="text" placeholder="Enter Password" id="password">
+        <br>
+        <button onclick="login()"> Login </button>
+
+    </div>
+
+    <div id="loadingDiv" style="display: none;">
+        <span id="loadingText"> Connecting to Wallet ... </span>
+        <div id="loading" class="spinner-border text-primary" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+
+
+</body>
+
+</htmL>

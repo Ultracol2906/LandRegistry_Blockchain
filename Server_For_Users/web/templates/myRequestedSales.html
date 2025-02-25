@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Requested Sales
+{% endblock %}
+
+{% block content %}
+
+
+<link rel="stylesheet" href="css/myRequestedSales.css">
+
+<script src="js/myRequestedSales.js"></script>
+
+<script type="text/javascript">
+    checkConnection()
+</script>
+
+<div style="min-height: 78vh;">
+      
+
+    <div class="alert " role="alert" id="notifyUser">
+    </div>
+
+    
+  
+
+    <div id="salesTable" style="display:block; margin:35px; padding:20px; background-color:#f9f9f9; border-radius:10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; text-align: left;">
+            <caption style="font-size: 1.5em; margin-bottom: 20px; font-weight: bold; color: #2E8B57;">Properties Available To Sell</caption>
+            <thead>
+                <tr style="background-color: #2E8B57; color: white; font-size: 1.1em;">
+                    <th style="padding: 12px; border: 1px solid #ddd; color:#555;">S.No</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;color:#555;">Sale Id</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;color:#555;">Property Id</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;color:#555;">Price (in Ether)</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;color:#555;">Price We Offered</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;color:#555;">State</th>
+                    <th style="padding: 12px; border: 1px solid #ddd;color:#555;">Options</th>
+                </tr>
+            </thead>
+            <tbody id="salesTableBody" style="background-color: #fff;">
+                <!-- Your rows will go here -->
+            </tbody>
+        </table>
+    </div>
+    
+
+    <div id="prompt-container-backcover">
+        <div id="prompt-container">
+            <label for="prompt-input">Enter Offered Price [in Ether]:</label>
+            <input type="number" id="prompt-input">
+            <br><br>
+            <button id="prompt-ok">OK</button>
+            <button id="prompt-cancel">Cancel</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+{% endblock %}
+
+
+    
